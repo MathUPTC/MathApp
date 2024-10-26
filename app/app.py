@@ -27,10 +27,6 @@ def recursos():
 def contacto():
     return render_template('contacto.html')
 
-# Ruta para la sección "Inicio"
-@app.route('/inicio')
-def inicio():
-    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
