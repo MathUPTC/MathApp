@@ -1,3 +1,4 @@
+/* Estilos para el contenedor del título */
 .title-container {
     background-color: #d4edda; /* Color pastel suave */
     padding: 20px;
@@ -6,13 +7,17 @@
 }
 
 /* Estilo para el título */
-h1 {
+.title-container h1 {
     color: white; /* Color del texto del título */
+    font-size: 30px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    margin: 0; /* Elimina el margen para mejor alineación */
 }
 
 /* Estilo para el subtítulo */
-h2 {
+.title-container h2 {
     color: white; /* Color del texto del subtítulo */
+    font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    margin: 10px 0; /* Espaciado superior e inferior */
 }
 
 /* Estilo para la cita */
@@ -20,4 +25,10 @@ h2 {
     text-align: center; /* Centrar la cita */
     font-size: 1.5em; /* Aumentar el tamaño de la fuente de la cita */
     margin: 40px 0; /* Margen superior e inferior */
+    color: #333; /* Color de la cita, ajustable según tu preferencia */
+    font-style: italic; /* Estilo de fuente en cursiva para la cita */
 }
+
+
+
+
