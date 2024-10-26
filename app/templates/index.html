@@ -1,48 +1,47 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Proyecto de Colaboración Matemática</title>
-    <style>
-        .quote {
-            font-size: 1.5rem;
-            font-style: italic;
-            color: #555;
-            margin: 2rem 0;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Inicio</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#codigo">Código de Conducta</a></li>
-                <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#eventos">Información</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contacto">Contáctanos</a></li>
-            </ul>
-        </div>
-    </nav>
+{% extends 'base.html' %}
 
-    <div class="container">
-        <h1 class="mt-4">Bienvenido al Proyecto de Colaboración Matemática</h1>
-        <p>Aquí podrás desarrollar habilidades en matemáticas aplicadas y tecnología.</p>
-        
-        <!-- Cita destacada -->
-        <blockquote class="quote">
-            “Intentando lo imposible es como se consigue lo posible.”<br>
-            <small>- Henri Barbusse</small>
-        </blockquote>
-        
-        <!-- Agrega más contenido aquí -->
-    </div>
+{% block title %}Matemáticas y Tecnología{% endblock %}
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+{% block content %}
+<div class="title-container">
+    <h1 class="mt-4">Bienvenido al Proyecto de Colaboración Matemática</h1>
+    <h2>Un Enfoque Basado en Proyectos para Aprender y Crear</h2>
+</div>
+
+<!-- Cita destacada -->
+<blockquote class="quote">
+    “Intentando lo imposible es como se consigue lo posible.”<br>
+    <small>- Henri Barbusse</small>
+</blockquote>
+
+<!-- Sección: ¿Qué es? -->
+<section class="mt-5">
+    <h3>¿Qué es?</h3>
+    <p>Este proyecto se centra en aplicar conceptos matemáticos a problemas reales en colaboración con la industria. A través de un enfoque basado en proyectos, los participantes aprenderán a utilizar matemáticas para resolver desafíos contemporáneos.</p>
+</section>
+
+<!-- Sección: ¿Para quién? -->
+<section class="mt-5">
+    <h3>¿Para quién?</h3>
+    <p>Este programa está dirigido a estudiantes, profesionales y entusiastas de las matemáticas y la tecnología que buscan aplicar sus conocimientos en un contexto práctico y colaborativo.</p>
+</section>
+
+<!-- Sección: ¿Cuándo? -->
+<section class="mt-5">
+    <h3>¿Cuándo?</h3>
+    <p>Las actividades del proyecto se llevarán a cabo a lo largo del semestre, con sesiones semanales de trabajo y colaboración, así como fechas específicas para presentaciones y evaluaciones.</p>
+</section>
+
+<!-- Sección: ¿Cómo? -->
+<section class="mt-5">
+    <h3>¿Cómo?</h3>
+    <p>Los participantes se agruparán en equipos para trabajar en proyectos específicos. Se proporcionarán recursos y mentoría para guiar a los grupos en su proceso de aprendizaje y creación.</p>
+</section>
+
+<!-- Sección: ¿Para qué? -->
+<section class="mt-5">
+    <h3>¿Para qué?</h3>
+    <p>El objetivo es empoderar a los participantes con habilidades prácticas en matemáticas aplicadas y tecnología, preparándolos para enfrentar desafíos del mundo real y contribuir de manera significativa a la industria.</p>
+</section>
+
+{% endblock %}

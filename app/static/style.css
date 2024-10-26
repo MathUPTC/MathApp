@@ -1,0 +1,23 @@
+.title-container {
+    background-color: #d4edda; /* Color pastel suave */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Estilo para el título */
+h1 {
+    color: white; /* Color del texto del título */
+}
+
+/* Estilo para el subtítulo */
+h2 {
+    color: white; /* Color del texto del subtítulo */
+}
+
+/* Estilo para la cita */
+.quote {
+    text-align: center; /* Centrar la cita */
+    font-size: 1.5em; /* Aumentar el tamaño de la fuente de la cita */
+    margin: 40px 0; /* Margen superior e inferior */
+}
