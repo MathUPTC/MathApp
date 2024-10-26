@@ -32,3 +32,14 @@
 
 
 
+/* Estilo para body  */
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 95%;
+    color: #012;
+    background-color: #FFF;
+}
+
+
+
+/* Estilo para la barra de navegación */

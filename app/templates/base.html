@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"> <!-- Asegúrate de que esta línea sea así -->
 
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+
+<div class="title-container">
+    <h1 class="mt-4">Bienvenido al Proyecto de Colaboración Matemática</h1>
+    <h2>Un Enfoque Basado en Proyectos para Aprender y Crear</h2>
+</div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="{{ url_for('home') }}">Inicio</a>
         <div class="collapse navbar-collapse" id="navbarNav">
