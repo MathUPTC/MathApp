@@ -11,20 +11,20 @@
 <body>
 
 <div class="title-container">
-    <h1 class="mt-4">Bienvenido al Proyecto de Colaboración Matemática</h1>
-    <h2>Un Enfoque Basado en Proyectos para Aprender y Crear</h2>
+    <h1 class="mt-4">Ciencia y Tecnología</h1>
+    <h2>Un Enfoque Basado en Proyectos</h2>
 </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{{ url_for('home') }}">Inicio</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('recursos') }}">Recursos</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('sobre') }}">Información</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('codigo_de_conducta') }}">Código de Conducta</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class ="nav-link"href="{{ url_for('home') }}">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('recursos') }}">Recursos</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('sobre') }}">Información</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('codigo_de_conducta') }}">Código de Conducta</a></li>
+        </ul>
+    </div>
+</nav>
 
     <!-- Contenido principal -->
     <div class="container">

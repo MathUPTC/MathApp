@@ -1,62 +1,78 @@
-
-/* Estilos para el contenedor del título */
+:root {
+    --primary-bg: #c9724f; /* Fondo del contenedor del título */
+    --primary-text: white; /* Color de texto principal */
+    --secondary-text: #333; /* Color del texto de la cita */
+    --navbar-bg: rgb(255, 255, 255); /* Color de la barra de navegación */
+    --title-font-size: 2em; /* Tamaño de fuente del título */
+    --subtitle-font-size: 20px; /* Tamaño de fuente del subtítulo */
+    --quote-font-size: 1.6em; /* Tamaño de fuente de la cita */
+}
 .title-container {
-    background-color: #c9724f; /* Color de fondo */
-    text-align: center; 
-    padding-top: 20px; /* Incrementa el espacio superior */
-    padding-bottom: 80px; /* Incrementa el espacio inferior */
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    margin-top: 60px; /* Deja margen superior para que no esté cubierto por la barra de navegación */
-    box-sizing: border-box; /* Asegura que el padding no altere el ancho total */
+    background-color: var(--primary-bg);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 80px;
+    width: 100%;
+    margin-top: 55px;
+    box-sizing: border-box;
 }
 
-/* Estilo para el título */
 .title-container h1 {
-    color: white; /* Color del texto del título */
-    font-size: 30px;
+    color: var(--primary-text);
+    font-size: var(--title-font-size);
     display: block;
-    font-size: 2em;
-
+    font-size: 3em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
-
-/* Estilo para el subtítulo */
 .title-container h2 {
-    color: white; /* Color del texto del subtítulo */
-    font-size: 20px;
+    color: var(--primary-text);
+    font-size: var(--subtitle-font-size);
     margin: 10px 0;
 }
 
-
-
-/* Estilo para la cita */
 .quote {
-    text-align: center; /* Centrar la cita */
-    font-size: 1.6em; /* Aumentar el tamaño de la fuente de la cita */
+    text-align: center;
+    font-size: var(--quote-font-size);
     margin-top: 40px;
     margin-bottom: 70px;
-    color: #333; /* Color de la cita, ajustable según tu preferencia */
-    letter-spacing: 3px
+    color: var(--secondary-text);
+    letter-spacing: 3px;
 }
 
 
-
-
-/* Estilo para body  */
-body {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 95%;
-    color: #012;
-    background-color: #FFF;
-}
-
-
-
-/* Estilo para la barra de navegación */
 .navbar {
     overflow: hidden;
-    background-color: white;
+    background-color: var(--navbar-bg); 
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; 
-}   
+}
+
+.navbar.navbar-expand-lg {
+    background-color: var(--navbar-bg) !important;
+}
+
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: var(--navbar-bg); /* Color de fondo personalizado */
+}
+
+
+
+.navbar-nav .nav-link {
+    float: left; /* Hacer que los enlaces floten a la izquierda */
+    display: block; /* Mostrar como bloque */
+    color: #828282; /* Color de texto personalizado */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 17px; /* Tamaño de fuente */
+    transition: color 0.3s; /* Añadir transición suave para el color */
+}
+
+
