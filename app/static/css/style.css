@@ -1,23 +1,29 @@
 
 /* Estilos para el contenedor del título */
 .title-container {
-    background-color: #f0e68c; /* Color pastel para el fondo */
-    padding: 20px; /* Espaciado alrededor del título */
-    text-align: center; /* Centra el texto dentro del contenedor */
+    background-color: #c9724f; /* Color de fondo */
+    text-align: center; 
+    padding-top: 20px; /* Incrementa el espacio superior */
+    padding-bottom: 80px; /* Incrementa el espacio inferior */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    margin-top: 60px; /* Deja margen superior para que no esté cubierto por la barra de navegación */
+    box-sizing: border-box; /* Asegura que el padding no altere el ancho total */
 }
 
 /* Estilo para el título */
 .title-container h1 {
     color: white; /* Color del texto del título */
-    font-size: 30px; /* Ajusta el tamaño de la fuente según tus preferencias */
-    margin: 0; /* Elimina el margen para mejor alineación */
+    font-size: 30px;
+    display: block;
+    font-size: 2em;
+
 }
 
 /* Estilo para el subtítulo */
 .title-container h2 {
     color: white; /* Color del texto del subtítulo */
-    font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
-    margin: 10px 0; /* Espaciado superior e inferior */
+    font-size: 20px;
+    margin: 10px 0;
 }
 
 
@@ -25,10 +31,11 @@
 /* Estilo para la cita */
 .quote {
     text-align: center; /* Centrar la cita */
-    font-size: 1.5em; /* Aumentar el tamaño de la fuente de la cita */
-    margin: 40px 0; /* Margen superior e inferior */
+    font-size: 1.6em; /* Aumentar el tamaño de la fuente de la cita */
+    margin-top: 40px;
+    margin-bottom: 70px;
     color: #333; /* Color de la cita, ajustable según tu preferencia */
-    font-style: italic; /* Estilo de fuente en cursiva para la cita */
+    letter-spacing: 3px
 }
 
 
@@ -45,3 +52,11 @@ body {
 
 
 /* Estilo para la barra de navegación */
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}   
