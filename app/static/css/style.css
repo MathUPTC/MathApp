@@ -1,9 +1,9 @@
+
 /* Estilos para el contenedor del título */
 .title-container {
-    background-color: #d4edda; /* Color pastel suave */
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
+    background-color: #f0e68c; /* Color pastel para el fondo */
+    padding: 20px; /* Espaciado alrededor del título */
+    text-align: center; /* Centra el texto dentro del contenedor */
 }
 
 /* Estilo para el título */
@@ -19,6 +19,8 @@
     font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
     margin: 10px 0; /* Espaciado superior e inferior */
 }
+
+
 
 /* Estilo para la cita */
 .quote {
