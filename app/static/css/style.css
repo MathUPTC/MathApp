@@ -1,12 +1,18 @@
 :root {
-    --primary-bg: #c9724f; /* Fondo del contenedor del título */
+    --primary-bg: #1c7ece; /* Fondo del contenedor del título */
     --primary-text: white; /* Color de texto principal */
-    --secondary-text: #333; /* Color del texto de la cita */
+    --secondary-text: #828282; /* Color del texto de la cita */
     --navbar-bg: rgb(255, 255, 255); /* Color de la barra de navegación */
     --title-font-size: 2em; /* Tamaño de fuente del título */
     --subtitle-font-size: 20px; /* Tamaño de fuente del subtítulo */
-    --quote-font-size: 1.6em; /* Tamaño de fuente de la cita */
+    --quote-font-size: 1.2em; /* Tamaño de fuente de la cita */
 }
+
+h1, h2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
 .title-container {
     background-color: var(--primary-bg);
     text-align: center;
@@ -76,3 +82,21 @@
 }
 
 
+
+.title-container h1 {
+    color: var(--primary-text);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-bg);
+    transition: color 0.3s ease;
+}
+
+
+
+
+.container {
+    max-width: 1000px;
+    margin: 60px auto;
+}
