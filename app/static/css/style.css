@@ -1,9 +1,9 @@
 :root {
-    --primary-bg: #1c7ece; /* Fondo del contenedor del título */
+    --primary-bg: #16a085; /* Fondo del contenedor del título */
     --primary-text: white; /* Color de texto principal */
     --secondary-text: #828282; /* Color del texto de la cita */
     --navbar-bg: rgb(255, 255, 255); /* Color de la barra de navegación */
-    --title-font-size: 2em; /* Tamaño de fuente del título */
+    --title-font-size: 4em; /* Tamaño de fuente del título */
     --subtitle-font-size: 20px; /* Tamaño de fuente del subtítulo */
     --quote-font-size: 1.2em; /* Tamaño de fuente de la cita */
 }
@@ -13,11 +13,18 @@ h1, h2 {
 }
 
 
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 95%;
+    color: #012;
+    background-color: #FFF;
+}
+
 .title-container {
     background-color: var(--primary-bg);
     text-align: center;
     padding-top: 5px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     width: 100%;
     margin-top: 55px;
     box-sizing: border-box;
@@ -27,7 +34,6 @@ h1, h2 {
     color: var(--primary-text);
     font-size: var(--title-font-size);
     display: block;
-    font-size: 3em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
@@ -53,10 +59,17 @@ h1, h2 {
 
 .navbar {
     overflow: hidden;
-    background-color: var(--navbar-bg); 
+    background-color: var(--navbar-bg);
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 0; 
+    min-height: 50px; /* Controlar la altura mínima */
+    display: flex;
+    align-items: center; /* Alinear contenido verticalmente */
+}
+.navbar-brand {
+    font-weight: bold;
 }
 
 .navbar.navbar-expand-lg {
@@ -64,22 +77,19 @@ h1, h2 {
 }
 
 
-/* Estilos para la barra de navegación */
-.navbar {
-    background-color: var(--navbar-bg); /* Color de fondo personalizado */
-}
-
 
 
 .navbar-nav .nav-link {
     float: left; /* Hacer que los enlaces floten a la izquierda */
     display: block; /* Mostrar como bloque */
-    color: #828282; /* Color de texto personalizado */
+    color: #0796ce; /* Color de texto personalizado */
     text-align: center; /* Centrar el texto */
-    text-decoration: none; /* Sin subrayado */
     font-size: 17px; /* Tamaño de fuente */
-    transition: color 0.3s; /* Añadir transición suave para el color */
+    font-weight: 600; /* Aumenta el peso de la letra para que sea más notoria */
+    padding: 10px 15px !important;
+    line-height: 1;    
 }
+
 
 
 
@@ -88,10 +98,7 @@ h1, h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.navbar-nav .nav-link:hover {
-    color: var(--primary-bg);
-    transition: color 0.3s ease;
-}
+
 
 
 
@@ -99,4 +106,9 @@ h1, h2 {
 .container {
     max-width: 1000px;
     margin: 60px auto;
+}
+
+h1.page-title {
+
+    font-size: 2em;
 }
