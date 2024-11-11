@@ -22,6 +22,12 @@ def codigo_de_conducta():
 def recursos():
     return render_template('recursos.html')
 
+#Ruta para ciencia y sociedad
+@app.route('/ciencia_y_sociedad')
+def sociedad():
+    return render_template('sociedad.html')
+
+
 # Ruta para la sección "Contacto"
 @app.route('/contacto')
 def contacto():
