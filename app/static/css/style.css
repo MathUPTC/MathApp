@@ -8,6 +8,23 @@
     --quote-font-size: 1.2em; /* Tamaño de fuente de la cita */
 }
 
+
+@font-face {
+    font-family: "MathItalic";
+    src: url("fonts/math_italic.woff2") format("woff2"),
+         url("fonts/math_italic.woff") format("woff"),
+         url("fonts/math_italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: "MathItalic", sans-serif;
+}
+
+
+
 h1, h2 {
     font-family: 'Quicksand', sans-serif;
 }
@@ -169,4 +186,17 @@ h1.page-title {
 
 .card-link:hover {
     text-decoration: underline;
+}
+
+.highlight {
+    background-color: #cce7ff; /* Azul oscuro pastel suave */
+    color: #012; /* Mantén un color de texto oscuro para buena legibilidad */
+    font-weight: bold;
+    padding: 0 4px; /* Añade un pequeño padding para destacar */
+    border-radius: 3px; /* Bordes ligeramente redondeados */
+}
+
+
+p {
+    line-height: 32px;
 }
