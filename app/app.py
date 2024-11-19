@@ -13,9 +13,9 @@ def sobre():
     return render_template('sobre.html')
 
 # Ruta para la sección "Código de Conducta"
-@app.route('/codigo-de-conducta')
-def codigo_de_conducta():
-    return render_template('codigo_de_conducta.html')
+@app.route('/participar')
+def participar():
+    return render_template('participar.html')
 
 # Ruta para la sección "Recursos"
 @app.route('/recursos')

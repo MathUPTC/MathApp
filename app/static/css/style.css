@@ -189,14 +189,68 @@ h1.page-title {
 }
 
 .highlight {
-    background-color: #cce7ff; /* Azul oscuro pastel suave */
-    color: #012; /* Mantén un color de texto oscuro para buena legibilidad */
+    background-color: #cce7ff;
+    color: #012; 
     font-weight: bold;
-    padding: 0 4px; /* Añade un pequeño padding para destacar */
-    border-radius: 3px; /* Bordes ligeramente redondeados */
+    padding: 0 4px; 
+    border-radius: 3px; /
 }
 
 
 p {
     line-height: 32px;
+    margin-bottom: 10px; 
+}
+ol li {
+    margin-bottom: 15px; /* Ajusta el valor según el espacio que necesites */
+}
+
+.alerta {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 20px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.alerta a {
+    color: #721c24;
+    text-decoration: underline;
+}
+
+.alerta a:hover {
+    color: #f44336;
+}
+
+.alerta h2 {
+    color: #721c24;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.mensaje-bienvenida {
+    font-size: 18px;
+    font-weight: bold;
+    color: #006cdf;
+}
+
+.btn-inscripcion {
+    background-color: #1aa78a;
+    color: white;
+    font-size: 18px;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.mensaje-leyenda {
+    font-size: 16px;
+    color: #555555;
+    margin-top: 10px;
+    font-style: italic;
+}
+html {
+    scroll-behavior: smooth;
 }
