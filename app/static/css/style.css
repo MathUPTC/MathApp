@@ -74,6 +74,7 @@ body {
 }
 
 
+/* Barra de navegación */
 .navbar {
     overflow: hidden;
     background-color: var(--navbar-bg);
@@ -84,18 +85,22 @@ body {
     min-height: 50px; /* Controlar la altura mínima */
     display: flex;
     align-items: center; /* Alinear contenido verticalmente */
+    z-index: 999; /* Asegurarse de que la barra de navegación quede encima de otros elementos */
 }
+
 .navbar-brand {
     font-weight: bold;
 }
 
+/* Navbar en pantallas grandes */
 .navbar.navbar-expand-lg {
     background-color: var(--navbar-bg) !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-
-
+/* Estilos para los enlaces de la barra de navegación */
 .navbar-nav .nav-link {
     float: left; /* Hacer que los enlaces floten a la izquierda */
     display: block; /* Mostrar como bloque */
@@ -104,7 +109,45 @@ body {
     font-size: 17px; /* Tamaño de fuente */
     font-weight: 600; /* Aumenta el peso de la letra para que sea más notoria */
     padding: 10px 15px !important;
-    line-height: 1;    
+    line-height: 1;
+}
+
+/* Contenedor de la barra de navegación (agregar media query para pantallas pequeñas) */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; /* Colocar los enlaces en columna en pantallas pequeñas */
+        width: 100%;
+        display: none; /* Ocultar los enlaces por defecto */
+    }
+    
+    .navbar-nav.show {
+        display: block; /* Mostrar los enlaces cuando se active la clase show */
+    }
+
+    .navbar-toggler {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 24px;
+        color: #0796ce;
+    }
+
+    .navbar-toggler-icon {
+        font-size: 30px;
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+    }
+}
+
+/* Cuando la barra de navegación esté abierta en pantallas móviles */
+@media (max-width: 768px) {
+    .navbar-nav.show {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 
