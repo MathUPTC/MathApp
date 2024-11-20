@@ -1,4 +1,6 @@
 from flask import Flask, render_template
+import os
+
 
 app = Flask(__name__)
 
@@ -36,3 +38,23 @@ def contacto():
 
 if __name__ == '__main__':
     app.run(debug=True)
+    with app.test_request_context():
+        
+        os.makedirs("docs", exist_ok=True)  # Crear el directorio 'docs' si no existe
+        routes = {
+        "index": "/",  # Ruta para 'index.html'
+        "ciencia-y-sociedad": "/ciencia-y-sociedad",  # Ruta para 'sociedad.html'
+        "participar": "/participar",  # Ruta para 'participar.html'
+        "recursos": "/recursos",  # Ruta para 'recursos.html'
+        "sobre": "/sobre"  # Ruta para 'sobre.html'
+    }
+        
+
+    for route, endpoint in routes.items():
+        # Renderiza la página de la ruta especificada
+        rendered = app.test_client().get(endpoint).data.decode("utf-8")
+        
+        # Guarda el contenido renderizado como un archivo HTML
+        with open(f"docs/{route}.html", "w", encoding="utf-8") as f:
+            f.write(rendered)
+
