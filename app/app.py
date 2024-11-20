@@ -2,7 +2,6 @@ from flask import Flask, render_template
 import os
 import shutil
 
-
 app = Flask(__name__)
 
 # Ruta para la página de inicio
@@ -29,6 +28,7 @@ def recursos():
 @app.route('/ciencia_y_sociedad')
 def sociedad():
     return render_template('sociedad.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
