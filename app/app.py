@@ -30,31 +30,5 @@ def recursos():
 def sociedad():
     return render_template('sociedad.html')
 
-
-def generate_html_files():
-    """Función para generar archivos HTML estáticos para GitHub Pages"""
-    os.makedirs("docs", exist_ok=True)  # Crear el directorio 'docs' si no existe
-    routes = {
-        "index": "/",  # Ruta para 'index.html'
-        "ciencia-y-sociedad": "/ciencia-y-sociedad",  # Ruta para 'sociedad.html'
-        "participar": "/participar",  # Ruta para 'participar.html'
-        "recursos": "/recursos",  # Ruta para 'recursos.html'
-        "sobre": "/sobre",  # Ruta para 'sobre.html'
-        "contacto": "/contacto"  # Ruta para 'contacto.html'
-    }
-    
-    with app.test_request_context():  # Inicia un contexto de prueba para realizar peticiones
-        for route, endpoint in routes.items():
-            # Renderiza la página de la ruta especificada
-            rendered = app.test_client().get(endpoint).data.decode("utf-8")
-            
-            # Guarda el contenido renderizado como un archivo HTML en 'docs'
-            with open(f"docs/{route}.html", "w", encoding="utf-8") as f:
-                f.write(rendered)
-
-# Ejecutar la generación de archivos HTML antes de iniciar la aplicación
-generate_html_files()
-
-
 if __name__ == '__main__':
     app.run(debug=True)
