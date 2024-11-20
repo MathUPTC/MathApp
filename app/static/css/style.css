@@ -76,7 +76,7 @@ body {
 
 /* Barra de navegación */
 .navbar {
-    overflow: hidden;
+    overflow: sticky;
     background-color: var(--navbar-bg);
     position: fixed;
     top: 0;
@@ -85,7 +85,7 @@ body {
     min-height: 50px; /* Controlar la altura mínima */
     display: flex;
     align-items: center; /* Alinear contenido verticalmente */
-    z-index: 999; /* Asegurarse de que la barra de navegación quede encima de otros elementos */
+    justify-content: space-between; /* Asegura que los elementos se distribuyan correctamente */
 }
 
 .navbar-brand {
@@ -114,30 +114,21 @@ body {
 
 /* Contenedor de la barra de navegación (agregar media query para pantallas pequeñas) */
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Cambiar la dirección de los elementos en pantallas pequeñas */
+        padding: 10px; /* Ajustar el padding para dispositivos móviles */
+    }
+
     .navbar-nav {
-        flex-direction: column; /* Colocar los enlaces en columna en pantallas pequeñas */
-        width: 100%;
-        display: none; /* Ocultar los enlaces por defecto */
-    }
-    
-    .navbar-nav.show {
-        display: block; /* Mostrar los enlaces cuando se active la clase show */
+        width: 100%; /* Asegura que los enlaces ocupen todo el ancho disponible */
+        display: flex;
+        flex-direction: column; /* Organiza los enlaces verticalmente */
+        align-items: center; /* Centra los enlaces */
     }
 
-    .navbar-toggler {
-        display: block;
-        border: none;
-        background-color: transparent;
-        font-size: 24px;
-        color: #0796ce;
-    }
-
-    .navbar-toggler-icon {
-        font-size: 30px;
-    }
-
-    .navbar-toggler:focus {
-        outline: none;
+    .navbar-nav .nav-link {
+        padding: 8px 0; /* Ajusta el padding para que los enlaces sean más fáciles de tocar en pantallas pequeñas */
+        font-size: 16px; /* Ajusta el tamaño de la fuente */
     }
 }
 
