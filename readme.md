@@ -1,6 +1,13 @@
+![Estado](https://img.shields.io/badge/status-archived-blue)  
+
 # Ciencia, Tecnología y Sociedad (Versión Flask)  
 
 **Estado del proyecto**: Migrado a Eleventy ⚠️  
+
+**Este proyecto nació como plataforma educativa para**:
+- Enseñar programación aplicada mediante talleres prácticos
+- Fomentar el pensamiento crítico sobre tecnología
+- Promover emprendimientos con base científica
 
 ## Contexto técnico  
 Primera implementación del sitio web usando:  
